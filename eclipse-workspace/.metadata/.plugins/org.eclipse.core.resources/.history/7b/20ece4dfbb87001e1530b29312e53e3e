@@ -1,0 +1,9 @@
+package net.codejava;
+
+public class HibernateOracle {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

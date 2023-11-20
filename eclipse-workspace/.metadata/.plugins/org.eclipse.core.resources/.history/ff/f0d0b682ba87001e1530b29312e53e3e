@@ -1,0 +1,9 @@
+package net.codejava;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Kategorie {
+	private int id;
+	private String nazwa;
+}

@@ -1,0 +1,32 @@
+package net.codejava;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
+public class Kategorie {
+	private int id_kategorii;
+	private String nazwa;
+	public Kategorie() {
+	}
+	public Kategorie(String nazwa) {
+		this.nazwa = nazwa;
+	}
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.SEQUENCE)
+	public int getIdKategorii() {
+		return id_kategorii;
+	}
+	public void setIdKategorii(int id_kategorii) {
+		this.id_kategorii = id_kategorii;
+	}
+	public String getNazwa() {
+		return nazwa;
+	}
+	public void setNazwa(String nazwa) {
+		this.nazwa = nazwa;
+	}
+}
